@@ -37,7 +37,6 @@ We will use JUnit for non-system testing where possible.
 
 | TC ID | Purpose 														| Prereqs 																			| Steps 																| Automated | Expected result 																										| Actual result | pass/fail |  Regression? 	|
 | ----- | --------------------- 										| ----- 																			| ----- 																| --------  | ---------------   																									| ------------- | --------- | ------------ 	|
-
 |UL1	|Verify user details can be retrieved				 			| JUnit																				| Invoke login														| Yes		|	User now has mocked user details																					|		Per expected		| Pass			|     X       	|
 |UA1	|Verify administrator can add player 				 			| JUnit																				| Invoke AdministratorService.createPlayer										| Yes		|	Database called with supplied player info, player created with correct attributes									|	Per expected		|	Pass		|     X      	|
 |UA2	|Verify administrator cannot add player missing username		| JUnit																				| Invoke AdministratorService.createPlayer	with empty UN						| Yes		|	Database is not called; error thrown																				|	Per expected		|	Pass		|     X      	|
